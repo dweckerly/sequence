@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>sequence</title>
+    <meta name="description" content="sequence">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="flex base">
+    <div id="content-wrapper">
+        <h1 id="title-text" class="center-text">>sequence</h1>
+        <div class="btn-wrapper">
+            <button id="red-btn" class="push-btn red-shadow" onclick="redBtnClick()"><span class="face red"></span></button>
+        </div>
+        <div class="btn-wrapper">
+            <button id="yellow-btn" class="push-btn yellow-shadow" onclick="yellowBtnClick()"><span class="face yellow"></span></button>
+            <button id="purple-btn" class="push-btn purple-shadow" onclick="purpleBtnClick()"><span class="face purple"></span></button>
+        </div>
+        <div class="btn-wrapper">
+            <button id="blue-btn" class="push-btn blue-shadow" onclick="blueBtnClick()"><span class="face blue"></span></button>
+        </div>
+        <div id="end-overlay" class="hide">
+            <h1 id="end-text" class="center-text">YOU LOSE</h1>
+            <h1 id="rounds" class="center-text"></h1>
+            <h1 id="score" class="center-text"></h1>
+        </div>
+        <div id="instruction-wrapper" class="hide">
+            <p id="instruction-text" class="center-text"></p>
+        </div>
+
+
+        <div id="overlay"></div>
+        <div id="start-wrapper" class="center-me">
+            <p>How to play:</p>
+            <p>Repeat the sequence of button presses. Pretty simple, right?</p>
+            <p class="center-text">Just do what you're told.</p>
+            <div class="center-text">
+                <button id="start-btn" onclick="startGame()">START</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="c-sharp">
+        <source src="c-sharp.wav">
+    </audio>
+    <audio id="d-sharp">
+        <source src="d-sharp.wav">
+    </audio>
+    <audio id="f-sharp">
+        <source src="f-sharp.wav">
+    </audio>
+    <audio id="g-sharp">
+        <source src="g-sharp.wav">
+    </audio>
+    <audio id="fail">
+        <source src="fail.wav">
+    </audio>
+
+</body>
+<script src="game.js"></script>
+
+</html>
